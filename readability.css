@@ -1,0 +1,77 @@
+/* Larger body copy and layouts for the new training guides. */
+body{font-size:17px}
+.main-nav{gap:17px}
+.main-nav a{font-size:12px}
+.header-cta,.button,.text-link{font-size:12px}
+.eyebrow{font-size:11px;line-height:1.5}
+.section-heading>p,.hero-lead{font-size:16px;line-height:1.75}
+.start-tag,.start-content>span,.start-content a,.photo-caption,.muscle-tab,.machine-tip span,.muscle-meta span{font-size:10px}
+.start-content p,.notice-strip p,.muscle-content>p,.training-tip p,.home-workout p,.macro-card p,.goal-card p,.plan-example,.calculator-copy>p,.calculator-warning,.calc-form label,.calc-result,.cardio-row>p,.supplement-body>p,.supplement-body>small,.dose-line,.supplement-footnote p,.record-info p,.record-note p,.assistant-copy>p{font-size:13px;line-height:1.75}
+.start-content h3{font-size:23px}
+.macro-title strong,.machine-tip strong,.muscle-meta strong,.cardio-row h3{font-size:15px}
+.calc-form input,.calc-form select{font-size:13px}
+.dose-line strong{font-size:12px}
+.record-info h3{font-size:17px}
+.chat-head strong{font-size:13px}
+.chat-head small,.message,.chat-form input,.assistant-pills button{font-size:11px}
+.chat-disclaimer{font-size:9px}
+.plan-audience{display:flex;flex-wrap:wrap;gap:9px;margin:-14px 0 23px}
+.plan-audience a{padding:11px 15px;border:1px solid #d8ddd0;border-radius:24px;background:#fff;color:#424a3c;font-size:13px;font-weight:700;transition:background .2s,border-color .2s}
+.plan-audience a:hover{background:#eff6e4;border-color:#b2d774}
+.weekly-plan-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.weekly-plan-card{overflow:hidden;background:#fff;border:1px solid #e1e5dc}
+.weekly-plan-card>img{display:block;width:100%;height:235px;object-fit:cover}
+.weekly-plan-body{padding:22px 23px 25px}
+.weekly-plan-body .eyebrow{margin-bottom:10px;color:#71804f}
+.weekly-plan-body h3,.food-tips h3{font:700 23px var(--display);letter-spacing:-.04em;margin:0 0 12px}
+.weekly-plan-body p,.food-tips p{font-size:14px;line-height:1.8;color:#62695e;margin-bottom:10px}
+.weekly-plan-body p:last-child,.food-tips p:last-child{margin-bottom:0}
+.teen-plan{border-color:#b6d688}
+.teen-plan .weekly-plan-body{background:#f5f8ee}
+.weekly-note{margin-top:17px;padding:18px 20px;background:#e8ebdf;color:#62695e;font-size:14px;line-height:1.8}
+.weekly-note strong{color:#252a20}
+.food-tips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin-top:17px}
+.food-tips article{overflow:hidden;background:#fff;border:1px solid #e5e8e0}
+.food-tips img{width:100%;height:210px;object-fit:cover;display:block}
+.food-tips article>div{padding:21px 22px 23px}
+.food-tips .eyebrow{margin-bottom:9px}
+.food-tips h3{font-size:21px}
+.product-guide{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin-top:23px}
+.product-guide>div:first-child{grid-column:1/-1;max-width:730px;margin-bottom:4px}
+.product-guide>div:first-child .eyebrow{color:var(--lime)}
+.product-guide>div:first-child h3{font:700 24px var(--display);letter-spacing:-.04em;margin:0 0 9px}
+.product-guide>div:first-child p,.product-guide article p{font-size:13px;line-height:1.75;color:#b9bfb2;margin:0}
+.product-guide article{padding:19px;background:#242a21;border:1px solid #383f33}
+.product-guide article>span{display:block;margin-bottom:9px;color:var(--lime);font-size:10px;font-weight:800;letter-spacing:.12em}
+.product-guide article strong{display:block;margin-bottom:8px;font:700 17px var(--display)}
+.product-guide-note{grid-column:1/-1;padding:14px 16px;background:#252a21;color:#c3c8bd;font-size:12px;line-height:1.7}
+.site-footer,.footer-bottom{font-size:11px}
+@media(max-width:900px){
+  .main-nav{gap:11px}
+  .main-nav a{font-size:11px}
+  .weekly-plan-card>img{height:200px}
+  .product-guide{grid-template-columns:1fr}
+  .product-guide>div:first-child,.product-guide-note{grid-column:auto}
+}
+@media(max-width:650px){
+  body{font-size:16px}
+  .main-nav{gap:17px}
+  .main-nav a{font-size:14px}
+  .eyebrow{font-size:10px}
+  .section-heading>p,.hero-lead{font-size:15px}
+  .start-content p,.notice-strip p,.muscle-content>p,.training-tip p,.home-workout p,.macro-card p,.goal-card p,.plan-example,.calculator-copy>p,.calculator-warning,.calc-form label,.calc-result,.cardio-row>p,.supplement-body>p,.supplement-body>small,.dose-line,.supplement-footnote p,.record-info p,.record-note p,.assistant-copy>p{font-size:12px}
+  .start-content h3{font-size:19px}
+  .weekly-plan-grid,.food-tips{grid-template-columns:1fr}
+  .weekly-plan-card>img{height:205px}
+  .weekly-plan-body{padding:19px 17px 21px}
+  .weekly-plan-body h3,.food-tips h3{font-size:20px}
+  .weekly-plan-body p,.food-tips p{font-size:13px}
+  .food-tips img{height:190px}
+  .food-tips article>div{padding:19px 17px 21px}
+  .weekly-note{font-size:12px;padding:15px}
+  .plan-audience{margin-top:-7px}
+  .plan-audience a{font-size:11px;padding:9px 12px}
+  .product-guide>div:first-child h3{font-size:21px}
+  .product-guide>div:first-child p,.product-guide article p{font-size:12px}
+  .footer-bottom{font-size:9px}
+}

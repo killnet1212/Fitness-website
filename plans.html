@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11130f">
+  <meta name="description" content="Планы тренировок для подростков и взрослых: только тренажёры, занятия дома и восстановление.">
+  <title>Планы на неделю — СИЛА</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="readability.css">
+  <link rel="stylesheet" href="plans.css">
+  <script src="navigation.js" defer></script>
+  <script src="plans.js" defer></script>
+</head>
+<body class="plans-page">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header">
+    <a class="brand" href="index.html#home" aria-label="СИЛА — на главную"><span class="brand-mark">С</span><span>СИЛА<span class="brand-dot">.</span></span></a>
+    <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Главная навигация">
+      <a href="index.html#start">Старт</a><a href="index.html#training">Упражнения</a><a href="plans.html" aria-current="page">Планы на неделю</a><a href="index.html#nutrition">Питание</a><a href="supplements.html">Топ добавок</a><a href="index.html#records">Рекорды</a>
+    </nav>
+    <a class="header-cta" href="index.html#assistant">Спросить помощника <span>↗</span></a>
+  </header>
+  <main id="main">
+    <section class="plan-hero">
+      <div class="section-wrap plan-hero-inner">
+        <a class="breadcrumb" href="index.html">← На главную</a>
+        <span class="eyebrow">ПЛАНЫ НА НЕДЕЛЮ · ПОДРОСТКАМ И ВЗРОСЛЫМ</span>
+        <h1>Каждый день —<br><em>понятный следующий шаг.</em></h1>
+        <p>Выбери возраст и место, затем день недели. В карточках упражнений теперь есть фотографии движения или оборудования; нажми на фото, чтобы открыть источник.</p>
+      </div>
+    </section>
+    <section class="section-wrap plan-builder">
+      <div class="plan-safety"><strong>Сначала безопасность.</strong> Это пример, а не индивидуальное назначение. Подросткам — только лёгкая нагрузка, после настройки тренажёров и с присмотром родителя или квалифицированного тренера; без максимальных весов и подходов до отказа. При травме или заболевании сначала посоветуйся с врачом.</div>
+      <div class="plan-controls">
+        <div class="control-group"><span>1 · ВЫБЕРИ ВОЗРАСТ</span><div class="control-buttons" role="group" aria-label="Возраст"><button class="age-choice is-active" type="button" data-age="adult" aria-pressed="true">Взрослый · 18+</button><button class="age-choice" type="button" data-age="teen" aria-pressed="false">Подросток · 13–17</button></div></div>
+        <div class="control-group goal-controls"><span>2 · ВЫБЕРИ ЦЕЛЬ</span><div class="control-buttons" role="group" aria-label="Цель плана"><button class="plan-choice is-active" type="button" data-audience="general" aria-pressed="true">Общий старт</button><button class="plan-choice" type="button" data-audience="gain" aria-pressed="false">Набор массы</button></div></div>
+        <div class="control-group setting-controls"><span>3 · ВЫБЕРИ МЕСТО</span><div class="control-buttons" role="group" aria-label="Место тренировок"><button class="setting-choice is-active" type="button" data-setting="gym" aria-pressed="true">В зале</button><button class="setting-choice" type="button" data-setting="home" aria-pressed="false">Дома</button><button class="setting-choice" type="button" data-setting="machines" aria-pressed="false">Только тренажёры</button></div></div>
+      </div>
+      <div class="selected-plan-intro"><div><span class="eyebrow" id="plan-eyebrow">ВЗРОСЛЫМ · ОБЩИЙ СТАРТ · ЗАЛ</span><h2 id="plan-title">Твоя неделя</h2></div><p id="plan-summary">Выбери день — покажу тренировку или отдых.</p></div>
+      <div class="day-picker" id="day-picker" role="group" aria-label="Выбери день недели"></div>
+      <section class="rest-timer" aria-label="Таймер отдыха между подходами">
+        <div class="timer-readout"><span class="timer-kicker">ОТДЫХ МЕЖДУ ПОДХОДАМИ</span><output id="timer-display" aria-live="off">01:30</output><span class="timer-status" id="timer-status" aria-live="polite">Выбери время и нажми «Старт»</span></div>
+        <div class="timer-controls">
+          <div class="timer-presets" role="group" aria-label="Длительность отдыха">
+            <button class="timer-preset" type="button" data-seconds="60" aria-pressed="false">60 сек</button>
+            <button class="timer-preset is-active" type="button" data-seconds="90" aria-pressed="true">90 сек</button>
+            <button class="timer-preset" type="button" data-seconds="120" aria-pressed="false">2 мин</button>
+          </div>
+          <div class="timer-actions"><button class="timer-start" id="timer-start" type="button">Старт</button><button class="timer-reset" id="timer-reset" type="button" aria-label="Сбросить таймер">Сброс</button></div>
+        </div>
+      </section>
+      <div class="day-grid" id="day-grid" aria-live="polite"></div>
+      <div class="progression-note"><span class="progression-icon">↗</span><div><strong>Как прогрессировать</strong><p>Когда все подходы получаются чисто и остаются 2–3 повтора в запасе, сначала добавь 1–2 повторения. Когда уверенно достиг верхней границы диапазона, можно немного увеличить вес. Отдыхай между силовыми подходами 1–3 минуты. Боль, головокружение или необычная одышка — остановись.</p></div></div>
+    </section>
+    <section class="video-guide">
+      <div class="section-wrap video-guide-inner"><div><span class="eyebrow">ТЕХНИКА ВАЖНЕЕ ВЕСА</span><h2>Посмотри движение,<br><em>потом повтори спокойно.</em></h2><p>Ссылки у каждого упражнения открывают поиск видео-демонстраций по конкретному движению. Выбирай ролики от квалифицированных тренеров; одно фото не заменяет показ техники и обратную связь.</p></div><div class="video-guide-card"><span class="play-mark">▶</span><div><strong>Перед первым подходом</strong><p>Разомнись 5–10 минут, начни без веса или с лёгким весом, проверь полную комфортную амплитуду.</p><a href="https://www.youtube.com/results?search_query=beginner+exercise+form+qualified+trainer" target="_blank" rel="noopener noreferrer">Видео: техника базовых упражнений ↗</a></div></div></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-top"><a class="brand footer-brand" href="index.html#home"><span class="brand-mark">С</span><span>СИЛА<span class="brand-dot">.</span></span></a><p>Сильная привычка строится постепенно.<br>Техника, сон и восстановление — тоже часть плана.</p><a class="back-top" href="#main">Наверх ↑</a></div><div class="footer-bottom"><span>© 2026 СИЛА · Учебный проект</span><span>Примеры тренировок не заменяют персональную консультацию.</span><div><a href="index.html">Главная</a><a href="supplements.html">Топ добавок</a><a href="index.html#assistant">Помощник</a></div></div></footer>
+</body>
+</html>
